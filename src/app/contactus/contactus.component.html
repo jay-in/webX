@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Name</span>
+        <input type="text" class="form-control" placeholder="Enter your Name" [formControl]="name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2">Email</span>
+            <input type="email" class="form-control" placeholder="Enter your Email" [formControl]="email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      </div>
+      <button type="button" class="btn btn-dark" (click)="postContactData()">Submit</button>
+</div>
